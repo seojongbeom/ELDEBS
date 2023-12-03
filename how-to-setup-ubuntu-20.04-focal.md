@@ -14,27 +14,27 @@ wsl --install Ubuntu-20.04 --web-download
 
 #### Install rootfs for ARM64 Ubuntu 20.04
 ```bash
-mkdir -p /opt/multistrap/arm64-ubuntu-focal
+sudo mkdir -p /opt/multistrap/arm64-ubuntu-focal
 cd /opt/multistrap/arm64-ubuntu-focal
-tar xvf [ELDEBS_ROOT]/gpg/ubuntu-trust-gpg.tar.bz2
-multistrap -f [ELDEBS_ROOT]/multistrap/ubuntu-20.04-forcal.conf
-[ELDEBS_ROOT]/sysroot-relativelinks.py /opt/multistrap/arm64-ubuntu-focal
+sudo tar xvf [ELDEBS_ROOT]/gpg/ubuntu-trust-gpg.tar.bz2
+sudo multistrap -f [ELDEBS_ROOT]/multistrap/ubuntu-20.04-forcal.conf
+sudo [ELDEBS_ROOT]/sysroot-relativelinks.py /opt/multistrap/arm64-ubuntu-focal
 ```
 
 #### Install rootfs for ARM64 Debian 10
 ```bash
-mkdir -p /opt/multistrap/arm64-debian-buster
+sudo mkdir -p /opt/multistrap/arm64-debian-buster
 cd /opt/multistrap/arm64-debian-buster
-tar xvf [ELDEBS_ROOT]/gpg/debian-trust-gpg.tar.bz2
-multistrap -f [ELDEBS_ROOT]/multistrap/debian-10-buster-dev.conf
-[ELDEBS_ROOT]/sysroot-relativelinks.py /opt/multistrap/arm64-debian-buster
+sudo tar xvf [ELDEBS_ROOT]/gpg/debian-trust-gpg.tar.bz2
+sudo multistrap -f [ELDEBS_ROOT]/multistrap/debian-10-buster-dev.conf
+sudo [ELDEBS_ROOT]/sysroot-relativelinks.py /opt/multistrap/arm64-debian-buster
 ```
 
 #### Install rootfs for ARM64 Debian 9
 ```bash
-mkdir -p /opt/multistrap/arm64-debian-stretch
+sudo mkdir -p /opt/multistrap/arm64-debian-stretch
 cd /opt/multistrap/arm64-debian-stretch
-tar xvf [ELDEBS_ROOT]/gpg/debian-trust-gpg.tar.bz2
-multistrap -f [ELDEBS_ROOT]/multistrap/debian-9-stretch.conf
-[ELDEBS_ROOT]/sysroot-relativelinks.py /opt/multistrap/arm64-debian-stretch
+sudo tar xvf [ELDEBS_ROOT]/gpg/debian-trust-gpg.tar.bz2
+sudo multistrap -f [ELDEBS_ROOT]/multistrap/debian-9-stretch.conf
+sudo [ELDEBS_ROOT]/sysroot-relativelinks.py /opt/multistrap/arm64-debian-stretch
 ```
